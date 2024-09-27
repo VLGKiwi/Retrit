@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Unbounded';
+  src: url(../public/fonts/Unbounded-ExtraLight.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url(../public/fonts/Unbounded-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url(../public/fonts/Unbounded-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url(../public/fonts/Unbounded-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Comforter';
+  src: url(../public/fonts/Comforter-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../public/fonts/Montserrat-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../public/fonts/Montserrat-MediumItalic.ttf);
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../public/fonts/Montserrat-Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../public/fonts/Montserrat-SemiBoldItalic.ttf);
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #CCCCCC transparent;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 3px;
+  width: 3px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #CCCCCC;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #9C9C9C;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #7E7E7E;
+}
