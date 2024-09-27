@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Unbounded';
+  src: url(../public/fonts/Unbounded-ExtraLight.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url(../public/fonts/Unbounded-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url(../public/fonts/Unbounded-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url(../public/fonts/Unbounded-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Comforter';
+  src: url(../public/fonts/Comforter-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../public/fonts/Montserrat-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../public/fonts/Montserrat-MediumItalic.ttf);
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../public/fonts/Montserrat-Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../public/fonts/Montserrat-SemiBoldItalic.ttf);
+  font-weight: 600;
+  font-style: italic;
+}

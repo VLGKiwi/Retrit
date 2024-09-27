@@ -1,0 +1,24 @@
+.header > ul {
+	margin: 0 auto;
+	list-style-type: none;
+
+	display: flex;
+	gap: 78.5px;
+	justify-content: center;
+}
+
+.header__point {
+	display: flex;
+	align-items: center;
+
+	font-family: Unbounded;
+	font-weight: 300;
+	font-size: 29px;
+	color: white;
+	text-align: center;
+}
+
+.header__point > a {
+	text-decoration: none;
+	color: white;
+}
