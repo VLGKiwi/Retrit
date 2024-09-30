@@ -1,0 +1,77 @@
+h2, h3, p, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+.service {
+	background: center no-repeat url(../../assets/background.png);
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	height: 100vh;
+}
+
+.mesto__sila {
+	padding: 100px 162px;
+	background-color: #00000070;
+	border-radius: 50px;
+	max-width: 929px;
+}
+
+.sila__title {
+	font-family: 'Unbounded';
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 150%;
+	color: white;
+}
+
+.sila__text {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 150%;
+	color: white;
+}
+
+.pakets {
+	display: flex;
+	gap: 20px;
+}
+
+.paket__content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	background-color: #00000095;
+	border-radius: 50px;
+	color: white;
+	padding: 50px;
+	text-wrap: wrap;
+}
+
+.content__title {
+	font-family: 'Unbounded';
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 150%;
+}
+
+.content__plus {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+	padding-left: 20px;
+}
+
+.content__price {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	font-style: italic;
+	font-size: 20px;
+	line-height: 150%;
+}
