@@ -280,6 +280,14 @@
 
 /*Телефон*/
 @media (max-width: 645px) {
+	.about__content {
+		padding: 20px;
+	}
+
+	.about__top {
+		gap: 10px;
+	}
+
 	.about__bottom,
 	.about__top {
 		flex-direction: column;
