@@ -32,14 +32,14 @@ export const Header = () => {
 					</a>
 				</li>
 				<li>
-					<div className={styles.header__img}>
+					<div className={styles.header__image}>
 						<a href="#">
 							<img src={vk} alt="" />
 						</a>
 					</div>
 				</li>
 				<li>
-					<div>
+					<div className={styles.header__image}>
 						<a href="#">
 							<img src={tg} alt="" />
 						</a>
