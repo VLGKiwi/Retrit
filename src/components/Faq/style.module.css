@@ -1,0 +1,51 @@
+.faq {
+	color: white;
+	background: top no-repeat url(../../assets/Footer/background_blur.png);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 120px 0;
+}
+
+.faq > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 1000px;
+	width: 100%;
+}
+
+.faq__title {
+	font-size: 32px;
+	font-family: 'Unbounded';
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.question__left {
+	align-self: flex-start;
+	max-width: 870px;
+}
+
+.question__right {
+	align-items: flex-end;
+	max-width: 870px
+}
+
+.question__right > h3,
+.question__left > h3 {
+	font-size: 32px;
+	line-height: 150%;
+	font-family: 'Unbounded';
+	font-weight: 400;
+}
+
+.question__right > p,
+.question__left > p {
+	font-size: 20px;
+	font-family: 'Montserrat';
+	font-weight: 400;
+	line-height: 150%;
+}
