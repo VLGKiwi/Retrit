@@ -1,0 +1,28 @@
+.footer {
+	background: top repeat url(../../assets/background.png);
+	background-size: cover;
+}
+
+.footer__blur {
+	backdrop-filter: blur(100px);
+}
+
+.footer__content {
+	display: flex;
+	flex-direction: column;
+	padding: 150px 300px 100px;
+}
+
+.content__text {
+	color: white;
+	font-family: 'Montserrat';
+	font-weight: 400;
+	line-height: 150%;
+	font-size: 24px;
+}
+
+.content__icons {
+	display: flex;
+	margin-top: 10px;
+	gap: 20px;
+}
