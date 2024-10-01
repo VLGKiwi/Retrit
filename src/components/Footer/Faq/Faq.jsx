@@ -2,7 +2,7 @@ import style from './style.module.css';
 
 export const Faq = () => {
 	return (
-		<section className={style.faq}>
+		<div className={style.faq}>
 			<div>
 				<h2 className={style.faq__title}>
 					FAQ
@@ -32,6 +32,6 @@ export const Faq = () => {
 					<p>Вы можете в любое время связаться с организатором Юлией 8-996-966-51-68  Telegram: @klevtsevich</p>
 				</div>
 			</div>
-		</section>
+		</div>
 	)
 }
