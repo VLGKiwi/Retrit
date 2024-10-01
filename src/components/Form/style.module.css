@@ -7,7 +7,7 @@
 }
 
 .form__content {
-	padding: 100px 60px;
+	padding: 50px 30px;
 	background-color: #00000070;
 	border-radius: 50px;
 
@@ -61,4 +61,61 @@ input[type='number'] {
 	font-family: 'Unbounded';
 	font-weight: 400;
 	font-size: 32px;
+}
+
+/*Ноут*/
+@media (max-width: 1200px) {
+
+}
+
+/*Планшет*/
+@media (max-width: 1000px) {
+	.form__content {
+		padding: 30px 10px;
+		border-radius: 30px;
+		gap: 20px;
+	}
+
+	.form__content > h2 {
+		font-size: 24px;
+	}
+
+	form {
+		gap: 20px;
+	}
+
+	form > input {
+		font-size: 16px;
+		padding: 10px;
+	}
+
+	.under__line {
+		font-size: 24px;
+	}
+}
+
+/*Телефон*/
+@media (max-width: 645px) {
+	.form__content {
+		padding: 30px 10px;
+		border-radius: 30px;
+		gap: 10px;
+	}
+
+	.form__content > h2 {
+		font-size: 16px;
+	}
+
+	form {
+		gap: 10px;
+	}
+
+	form > input {
+		font-size: 12px;
+		padding: 10px;
+	}
+
+	.under__line {
+		font-size: 16px;
+	}
 }

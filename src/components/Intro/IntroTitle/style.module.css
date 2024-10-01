@@ -10,7 +10,7 @@
 	margin: 0 auto;
 	align-items: center;
 
-	width: 828px;
+	max-width: 828px;
 }
 
 .content__mojno {
@@ -39,4 +39,76 @@
 
 	text-align: left;
 	align-self: flex-start;
+}
+
+/*Ноут*/
+@media (max-width: 1200px) {
+	.intro__title {
+		position: relative;
+		top: 10vh;
+	}
+
+	.content__mojno {
+		font-size: 120px;
+	}
+
+	.content__podrg {
+		position: relative;
+		top: -10px;
+		font-size: 130px;
+	}
+
+	.content__retrit {
+		position: relative;
+		top: -20px;
+		font-size: 70px;
+		align-self: center;
+	}
+}
+
+/*Планшет*/
+@media (max-width: 1000px) {
+	.content__mojno {
+		font-size: 80px;
+	}
+
+	.content__podrg {
+		right: -120px;
+		top: -19px;
+		font-size: 80px;
+		align-self: center;
+	}
+
+	.content__retrit {
+		top: -40px;
+		font-size: 50px;
+		line-height: 100%;
+		align-self: center;
+	}
+}
+
+/*Телефон*/
+@media (max-width: 645px) {
+	.intro__title {
+		position: relative;
+		top: 30vh;
+	}
+
+	.content__mojno {
+		font-size: 50px;
+	}
+
+	.content__podrg {
+		right: -80px;
+		top: -25px;
+		font-size: 50px;
+		align-self: center;
+	}
+
+	.content__retrit {
+		top: -50px;
+		font-size: 30px;
+		line-height: 100%;
+		align-self: center;
+	}
 }
