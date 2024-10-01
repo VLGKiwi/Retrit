@@ -1,16 +1,20 @@
 .about {
 	background: center no-repeat url(../../assets/background.png);
 	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .about__content {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 340px;
+	gap: 250px;
 
 	position: relative;
-	top: 20vh;
 
+	align-items: center;
+	justify-content: center;
 	max-width: 1273px;
 	margin: 0 auto;
 }
@@ -34,4 +38,49 @@
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 30px;
+}
+
+/*Ноут*/
+@media (max-width: 1200px) {
+	.content {
+		width: 350px;
+	}
+
+	.content > p {
+		font-size: 16px;
+		line-height: 100%;
+	}
+}
+
+/*Планшет*/
+@media (max-width: 1000px) {
+	.about__content {
+		gap: 130px;
+	}
+
+	.content {
+		width: 250px;
+	}
+
+	.content > p {
+		font-size: 12px;
+		line-height: 100%;
+	}
+}
+
+/*Телефон*/
+@media (max-width: 645px) {
+	.about__content {
+		gap: 50px;
+	}
+
+	.content {
+		width: 200px;
+		padding: 20px 0;
+	}
+
+	.content > p {
+		font-size: 10px;
+		line-height: 100%;
+	}
 }
