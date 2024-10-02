@@ -1,4 +1,5 @@
-import { Observer } from 'gsap/all';
+import gsap from 'gsap';
+import Observer from 'gsap/Observer';
 import './App.css'
 import { About } from './components/About/About';
 import { AboutUs } from './components/AboutUs/AboutUs';
@@ -6,7 +7,6 @@ import { Footer } from './components/Footer/Footer';
 import { Form } from './components/Form/Form';
 import { Intro } from './components/Intro/Intro';
 import { Service } from './components/Service/Sevice';
-import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
 
