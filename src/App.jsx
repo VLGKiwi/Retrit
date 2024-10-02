@@ -31,7 +31,6 @@ function App() {
       onComplete: () => animating = false
     })
 
-    console.log(index)
     if (index >= 0) {
       currentIndex = index
     }
@@ -46,7 +45,6 @@ function App() {
       onComplete: () => animating = false
     })
 
-    console.log(index)
     if (index <= 5) {
       currentIndex = index
     }
