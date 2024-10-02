@@ -7,7 +7,7 @@ export default defineConfig({
   logLevel: 'debug',
   build: {
     rollupOptions: {
-      external: ['gsap/Observer']
+      external: ['gsap']
     }
   }
 })
