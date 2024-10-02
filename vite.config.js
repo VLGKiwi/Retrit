@@ -6,7 +6,13 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['gsap', 'gsap/*', '@gsap/react']
+      external: id => {
+        // Если модуль начинается с одного из этих путей, он будет считаться внешним
+        if (id.includes('node_modules')) return true;
+        // eslint-disable-next-line no-undef
+        if (builtinModules.includes(id)) return true;
+        return false;
+      }
     }
   }
 })
