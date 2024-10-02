@@ -5,7 +5,10 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['gsap'],
+      external: (id) => {
+        // Помечаем все модули, начинающиеся с 'gsap', как внешние
+        return /^gsap/.test(id);
+      }
     }
   },
   optimizeDeps: {
