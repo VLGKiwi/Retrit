@@ -1,4 +1,4 @@
-import { Observer } from 'gsap/Observer';
+import { Observer } from 'gsap/all';
 import './App.css'
 import { About } from './components/About/About';
 import { AboutUs } from './components/AboutUs/AboutUs';
