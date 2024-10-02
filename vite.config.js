@@ -1,17 +1,23 @@
+/* eslint-disable no-undef */
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  resolve: {
+    alias: {
+      // Добавляем алиас для gsap, чтобы разрешить модульные пути
+      'gsap': path.resolve(__dirname, 'node_modules/gsap'),
+      '@gsap/react': path.resolve(__dirname, 'node_modules/@gsap/react')
+    }
+  },
   build: {
     rollupOptions: {
-      external: (id) => {
-        // Помечаем все модули, начинающиеся с 'gsap' или '@gsap/react', как внешние
-        return /^gsap/.test(id) || /^@gsap\/react/.test(id);
-      }
+      external: (id) => /^gsap/.test(id) || /^@gsap\/react/.test(id)
     }
   },
   optimizeDeps: {
-    include: ['gsap', '@gsap/react'] // Оптимизируем gsap и @gsap/react
+    include: ['gsap', '@gsap/react']
   }
 })
