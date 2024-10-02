@@ -4,10 +4,9 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  logLevel: 'debug',
   build: {
     rollupOptions: {
-      external: ['gsap']
+      external: ['gsap', 'gsap/Observer']
     }
   }
 })
