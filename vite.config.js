@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['gsap', 'gsap/Observer']
+      external: ['gsap', 'gsap/Observer', '@gsap/react']
     }
   }
 })
