@@ -52,7 +52,7 @@ function App() {
 
   Observer.create({
     target: window,
-    type: "wheel,touch,pointer",
+    type: "wheel,scroll,touch,pointer",
     onDown: () => !animating && currentIndex <= (arr.length-1) && previous(arr, currentIndex+1),
     onUp: () => !animating && currentIndex >= 1 && next(arr, currentIndex - 1),
   });
