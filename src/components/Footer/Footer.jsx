@@ -1,4 +1,4 @@
-import { FaqOne } from "./Faq/Faq.jsx";
+import { Faq } from "./Faq/Faq.jsx";
 import style from './style.module.css'
 import wa from '../../assets/Footer/whatsapp.svg'
 import tg from '../../assets/Footer/tg.svg'
@@ -7,7 +7,7 @@ export const Footer = () => {
 	return (
 		<section className={style.footer}>
 			<div className={style.footer__blur}>
-				<FaqOne />
+				<Faq />
 				<div className={style.footer__content}>
 					<div className={style.content__text}>
 						<p>КЛЕВЦЕВИЧ ЮЛИЯ АЛЕКСАНДРОВНА (ИП)</p>
