@@ -1,6 +1,6 @@
 .form {
 	height: 100vh;
-	background: center no-repeat url(../../assets/background.png);
+	/* background: center no-repeat url(../../assets/background.png); */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -15,6 +15,7 @@
 	flex-direction: column;
 	gap: 20px;
 	text-align: center;
+	z-index: 2;
 }
 
 .form__content > h2 {
