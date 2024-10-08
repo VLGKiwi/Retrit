@@ -1,159 +1,165 @@
 .faq {
-	color: white;
-	background: top no-repeat url(../../assets/Footer/background_blur.png);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 120px 0;
+  color: white;
+  background: top no-repeat url(../../assets/Footer/background_blur.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0;
+}
+
+.text {
+  display: none;
+  opacity: 0;
 }
 
 .faq > div {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	max-width: 1000px;
-	width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  width: 100%;
 }
 
 .faq__title {
-	font-size: 32px;
-	font-family: 'Unbounded';
-	font-weight: 400;
-	text-transform: uppercase;
+  font-size: 32px;
+  font-family: 'Unbounded';
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .question__left {
-	align-self: flex-start;
-	max-width: 870px;
+  align-self: flex-start;
+  max-width: 870px;
+  overflow: hidden;
 }
 
 .question__right {
-	align-items: flex-end;
-	max-width: 870px
+  align-items: flex-end;
+  max-width: 870px;
+  overflow: hidden;
 }
 
-.question__right > h3,
-.question__left > h3 {
-	font-size: 32px;
-	line-height: 150%;
-	font-family: 'Unbounded';
-	font-weight: 400;
+.title {
+  font-size: 32px;
+  line-height: 150%;
+  font-family: 'Unbounded';
+  font-weight: 400;
 }
 
 .question__right > p,
 .question__left > p {
-	font-size: 20px;
-	font-family: 'Montserrat';
-	font-weight: 400;
-	line-height: 150%;
+  font-size: 20px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  line-height: 150%;
 }
 
 /*Ноут*/
 @media (max-width: 1200px) {
-	.faq {
-		padding: 100px 0;
-	}
+  .faq {
+    padding: 100px 0;
+  }
 
-	.faq > div {
-		max-width: 800px;
-		width: 100%;
-	}
+  .faq > div {
+    max-width: 800px;
+    width: 100%;
+  }
 
-	.faq__title {
-		font-size: 24px;
-	}
+  .faq__title {
+    font-size: 24px;
+  }
 
-	.question__left {
-		align-self: flex-start;
-		max-width: 700px;
-	}
+  .question__left {
+    align-self: flex-start;
+    max-width: 700px;
+  }
 
-	.question__right {
-		align-items: flex-end;
-		max-width: 700px
-	}
+  .question__right {
+    align-items: flex-end;
+    max-width: 700px
+  }
 
-	.question__right > h3,
-	.question__left > h3 {
-		font-size: 24px;
-	}
+  .question__right > h3,
+  .question__left > h3 {
+    font-size: 24px;
+  }
 
-	.question__right > p,
-	.question__left > p {
-		font-size: 16px;
-	}
+  .question__right > p,
+  .question__left > p {
+    font-size: 16px;
+  }
 }
 
 /*Планшет*/
 @media (max-width: 1000px) {
-	.faq {
-		padding: 60px 20px;
-	}
+  .faq {
+    padding: 60px 20px;
+  }
 
-	.faq > div {
-		max-width: 500px;
-		width: 100%;
-	}
+  .faq > div {
+    max-width: 500px;
+    width: 100%;
+  }
 
-	.faq__title {
-		font-size: 18px;
-	}
+  .faq__title {
+    font-size: 18px;
+  }
 
-	.question__left {
-		align-self: flex-start;
-		max-width: 400px;
-	}
+  .question__left {
+    align-self: flex-start;
+    max-width: 400px;
+  }
 
-	.question__right {
-		align-items: flex-end;
-		max-width: 400px
-	}
+  .question__right {
+    align-items: flex-end;
+    max-width: 400px
+  }
 
-	.question__right > h3,
-	.question__left > h3 {
-		font-size: 18px;
-	}
+  .question__right > h3,
+  .question__left > h3 {
+    font-size: 18px;
+  }
 
-	.question__right > p,
-	.question__left > p {
-		font-size: 12px;
-	}
+  .question__right > p,
+  .question__left > p {
+    font-size: 12px;
+  }
 }
 
 /*Телефон*/
 @media (max-width: 645px) {
-	.faq {
-		padding: 60px 10px;
-	}
+  .faq {
+    padding: 60px 10px;
+  }
 
-	.faq > div {
-		max-width: 500px;
-		width: 100%;
-	}
+  .faq > div {
+    max-width: 500px;
+    width: 100%;
+  }
 
-	.faq__title {
-		font-size: 18px;
-	}
+  .faq__title {
+    font-size: 18px;
+  }
 
-	.question__left {
-		align-self: flex-start;
-		max-width: 400px;
-	}
+  .question__left {
+    align-self: flex-start;
+    max-width: 400px;
+  }
 
-	.question__right {
-		align-items: flex-start;
-		max-width: 400px
-	}
+  .question__right {
+    align-items: flex-start;
+    max-width: 400px
+  }
 
-	.question__right > h3,
-	.question__left > h3 {
-		font-size: 16px;
-	}
+  .question__right > h3,
+  .question__left > h3 {
+    font-size: 16px;
+  }
 
-	.question__right > p,
-	.question__left > p {
-		font-size: 12px;
-	}
+  .question__right > p,
+  .question__left > p {
+    font-size: 12px;
+  }
 }
