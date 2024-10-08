@@ -91,3 +91,35 @@
 *::-webkit-scrollbar-thumb:active {
   background-color: #7E7E7E;
 }
+
+/* .parallax
+{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+} */
+
+.background__forest {
+  background: fixed no-repeat url(./assets/background.png);
+  background-position: 100% 100%;
+  z-index: -3;
+}
+
+.background__tree {
+  background: fixed no-repeat url(./assets/background__tree.png);
+  background-position: 100% 100%;
+  z-index: -2;
+}
+
+.cloud {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.cloud > img {
+  height: 100%;
+  z-index: 2;
+}

@@ -1,0 +1,9 @@
+.fog {
+  position: fixed;
+  top: 500px;
+  bottom: 0;
+	left: 1600px;
+  width: 7680px;
+  filter: blur(20px);
+	z-index: 1;
+}

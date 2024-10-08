@@ -9,14 +9,18 @@ import { Intro } from './components/Intro/Intro';
 import { Service } from './components/Service/Sevice';
 import { useGSAP } from '@gsap/react';
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
+import cloud from './assets/cloud.png'
+import { Fog } from './components/Fog/Fog';
 
 gsap.registerPlugin(useGSAP, Observer, ScrollToPlugin)
 
 function App() {
 
   let arr;
+  let bgTree;
   window.addEventListener('load', function () {
     arr = document.querySelectorAll('.one');
+    bgTree = document.getElementById('background__tree')
   })
   let currentIndex = 0;
 
@@ -50,6 +54,15 @@ function App() {
     }
   }
 
+
+  function moveBackground(e) {
+    let offsetX = -180 + (e.clientX / window.innerWidth * 30) - 10;
+    let offsetY = -550 + (e.clientY / window.innerHeight * 5) - 10;
+
+    bgTree.setAttribute("style", "background-position: " + offsetX + "px " + offsetY + "px;")
+  }
+
+
   Observer.create({
     target: window,
     type: "wheel,touch,pointer",
@@ -57,27 +70,33 @@ function App() {
     onUp: () => !animating && currentIndex >= 1 && next(arr, currentIndex - 1),
   });
 
+  document.addEventListener('mousemove', function (e) { moveBackground(e); });
+
   return (
-    <>
-      <div className='one'>
-        <Intro />
+    <div className='parallax background__forest'>
+      <div className='parralax background__tree' id='background__tree'>
+        <div className='cloud' id='cloud'><img src={cloud} alt="" /></div>
+        <Fog />
+        <div className='one'>
+          <Intro />
+        </div>
+        <div className='one'>
+          <About />
+        </div>
+        <div className='one'>
+          <AboutUs />
+        </div>
+        <div className='one'>
+          <Service />
+        </div>
+        <div className='one'>
+          <Form />
+        </div>
+        <div className='one'>
+          <Footer />
+        </div>
       </div>
-      <div className='one'>
-        <About />
-      </div>
-      <div className='one'>
-        <AboutUs />
-      </div>
-      <div className='one'>
-        <Service />
-      </div>
-      <div className='one'>
-        <Form />
-      </div>
-      <div className='one'>
-        <Footer />
-      </div>
-    </>
+    </div>
   )
 }
 
