@@ -1,12 +1,13 @@
 .aboutUs {
 	height: 100vh;
-	background: center no-repeat url(../../assets/background.png);
+	/* background: center no-repeat url(../../assets/background.png); */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .about__content {
+	z-index: 2;
 	background-color: #00000070;
 	border-radius: 50px;
 
