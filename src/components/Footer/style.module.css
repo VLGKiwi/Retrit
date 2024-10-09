@@ -4,6 +4,8 @@
 }
 
 .footer__blur {
+	display: flex;
+	flex-direction: column;
 	backdrop-filter: blur(100px);
 	position: relative;
 	z-index: 5;
