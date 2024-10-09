@@ -35,6 +35,7 @@ function App() {
       onComplete: () => animating = false
     })
 
+    console.log(index)
     if (index >= 0) {
       currentIndex = index
     }
@@ -49,15 +50,16 @@ function App() {
       onComplete: () => animating = false
     })
 
-    if (index <= 5) {
+    console.log(index)
+    if (index <= 6) {
       currentIndex = index
     }
   }
 
 
   function moveBackground(e) {
-    let offsetX = -180 + (e.clientX / window.innerWidth * 30) - 10;
-    let offsetY = -550 + (e.clientY / window.innerHeight * 5) - 10;
+    let offsetX = -170 + (e.clientX / window.innerWidth * 30) - 10;
+    let offsetY = -530 + (e.clientY / window.innerHeight * 5) - 10;
 
     bgTree.setAttribute("style", "background-position: " + offsetX + "px " + offsetY + "px;")
   }
@@ -66,7 +68,7 @@ function App() {
   Observer.create({
     target: window,
     type: "wheel,touch,pointer",
-    onDown: () => !animating && currentIndex <= (arr.length-1) && previous(arr, currentIndex+1),
+    onDown: () => !animating && currentIndex <= (arr.length-2) && previous(arr, currentIndex+1),
     onUp: () => !animating && currentIndex >= 1 && next(arr, currentIndex - 1),
   });
 

@@ -105,6 +105,7 @@
   background: fixed no-repeat url(./assets/background.png);
   background-position: 100% 100%;
   z-index: -3;
+  overflow: hidden;
 }
 
 .background__tree {
