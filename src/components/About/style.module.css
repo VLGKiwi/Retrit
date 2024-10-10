@@ -27,6 +27,8 @@
 	width: 464px;
 	padding: 40px 0;
 	justify-content: center;
+	backdrop-filter: blur(5px);
+	z-index: 2;
 }
 
 .content > p {
