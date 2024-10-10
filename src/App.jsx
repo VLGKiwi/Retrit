@@ -2,7 +2,6 @@ import gsap from 'gsap';
 import Observer from 'gsap/Observer';
 import './App.css'
 import { About } from './components/About/About';
-import { AboutUs } from './components/AboutUs/AboutUs';
 import { Footer } from './components/Footer/Footer';
 import { Form } from './components/Form/Form';
 import { Intro } from './components/Intro/Intro';
@@ -11,6 +10,11 @@ import { useGSAP } from '@gsap/react';
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
 import cloud from './assets/cloud.png'
 import { Fog } from './components/Fog/Fog';
+import { AboutUsOne } from './components/AboutUs/AboutUsOne/AboutUsOne';
+import { AboutUsTwo } from './components/AboutUs/AboutUsTwo/AboutUsTwo';
+import { AboutUsFive } from './components/AboutUs/AboutUsFive/AboutUsFive';
+import { AboutUsFour } from './components/AboutUs/AboutUsFour/AboutUsFour';
+import { AboutUsThree } from './components/AboutUs/AboutUsThree/AboutUsThree';
 
 gsap.registerPlugin(useGSAP, Observer, ScrollToPlugin)
 
@@ -51,7 +55,7 @@ function App() {
     })
 
     console.log(index)
-    if (index <= 6) {
+    if (index <= 10) {
       currentIndex = index
     }
   }
@@ -85,10 +89,22 @@ function App() {
         <div className='one'>
           <About />
         </div>
-        <div className='one'>
-          <AboutUs />
+        <div className="one">
+          <AboutUsOne />
         </div>
-        <div className='one'>
+        <div className="one">
+          <AboutUsTwo />
+        </div>
+        <div className="one">
+          <AboutUsThree />
+        </div>
+        <div className="one">
+          <AboutUsFour />
+        </div>
+        <div className="one">
+          <AboutUsFive />
+        </div>
+        <div className="one">
           <Service />
         </div>
         <div className='one'>
