@@ -10,6 +10,7 @@
 	padding: 50px 30px;
 	background-color: #00000070;
 	border-radius: 50px;
+	backdrop-filter: blur(5px);
 
 	display: flex;
 	flex-direction: column;
