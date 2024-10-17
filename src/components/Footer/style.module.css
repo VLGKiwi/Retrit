@@ -6,9 +6,11 @@
 .footer__blur {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	backdrop-filter: blur(100px);
 	position: relative;
 	z-index: 5;
+	height: 100vh;
 }
 
 .footer__content {
