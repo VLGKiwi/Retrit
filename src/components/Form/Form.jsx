@@ -6,12 +6,13 @@ export const Form = () => {
 		<section className={style.form}>
 			<div className={style.form__content}>
 				<h2>Оставить заявку</h2>
-				<form action="">
-					<input type="text" placeholder='ФИО' />
-					<input type="number" name="" id="" placeholder='Телефон' />
-					<input type="email" name="" id="" placeholder='Почта' />
-					<input type="text" placeholder='Телеграмм' />
-					<input type="submit" value="Отправить" />
+				<form method='post' action="send.php">
+					<input type="text" name="fio" placeholder='ФИО' />
+					<input type="number" name="phone" id="" placeholder='Телефон' />
+					<input type="email" name="mail" id="" placeholder='Почта' />
+					<input type="text" name="tg" placeholder='Телеграмм' />
+					<input className={style.submit} type="submit" value="Отправить" />
+					<input type="hidden" name="act" value="order" />
 				</form>
 				<div>
 					<div>
