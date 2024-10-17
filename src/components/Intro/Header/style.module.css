@@ -1,5 +1,6 @@
 .header {
 	padding-top: 30px;
+	z-index: 2;
 }
 
 .header > ul {
@@ -25,6 +26,12 @@
 .header__point > a {
 	text-decoration: none;
 	color: white;
+	transition: font-size 1s;
+}
+
+.header__point > a:hover {
+	font-size: 32px;
+	transition: font-size 1s;
 }
 
 /*Ноут*/
