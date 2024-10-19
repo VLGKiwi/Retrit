@@ -21,7 +21,8 @@ export const Faq = () => {
           }, {
 						scaleX: 0,
 						scaleY: 0,
-						x: 900,
+            x: 900,
+            height: '0',
             duration: 1,
             opacity: 0,
             display: 'none',
@@ -38,7 +39,7 @@ export const Faq = () => {
 						scaleX: 1,
 						scaleY: 1,
 						x: 0,
-						height: '100%',
+						height: 'auto',
             duration: 1.5,
             opacity: 1,
             display: 'flex',

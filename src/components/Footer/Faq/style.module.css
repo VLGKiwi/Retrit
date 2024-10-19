@@ -34,12 +34,19 @@
   align-self: flex-start;
   max-width: 870px;
   overflow: hidden;
+  border-left: 5px solid white;
+  padding-left: 10px;
+  margin-top: 10px;
 }
 
 .question__right {
-  align-items: flex-end;
+  align-self: flex-start;
   max-width: 870px;
   overflow: hidden;
+  border-left: 5px solid white;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-left: 100px;
 }
 
 .title {
@@ -78,7 +85,7 @@
   }
 
   .question__right {
-    align-items: flex-end;
+    align-items: flex-start;
     max-width: 700px
   }
 
@@ -114,7 +121,7 @@
   }
 
   .question__right {
-    align-items: flex-end;
+    align-items: flex-start;
     max-width: 400px
   }
 
