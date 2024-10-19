@@ -123,5 +123,11 @@
 
 .cloud > img {
   height: 100%;
-  z-index: 2;
+  z-index: 1;
+}
+
+@media (max-width: 745px) {
+  .background__tree {
+    background: none;
+  }
 }
