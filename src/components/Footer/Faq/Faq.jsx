@@ -18,12 +18,12 @@ export const Faq = () => {
             x: 0,
 						scaleX: 1,
             scaleY: 1,
-            height: par.offsetHeight
+
           }, {
 						scaleX: 0,
 						scaleY: 0,
             x: 900,
-            height: '0',
+            
             duration: 1,
             opacity: 0,
             display: 'none',
