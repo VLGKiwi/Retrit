@@ -111,16 +111,17 @@
   z-index: 1;
 }
 
+.background__forest > div:first-child {
+  display: none;
+}
+
 @media (max-width: 645px) {
   .background__forest {
     background: none;
   }
 
-  .background__forest {
-    background: scroll no-repeat url(./assets/background.png);
-  }
-
   .background__forest > div:first-child {
+    display: flex;
     position: absolute;
     height: 100vh;
   }
