@@ -104,14 +104,14 @@
 .background__forest {
   background: fixed no-repeat url(./assets/background.png);
   background-position: 100% 100%;
-  z-index: -3;
+  z-index: -2;
   overflow: hidden;
 }
 
 .background__tree {
   background: fixed no-repeat url(./assets/background__tree.png);
   background-position: 100% 100%;
-  z-index: -2;
+  z-index: -1;
 }
 
 .cloud {
@@ -126,7 +126,7 @@
   z-index: 1;
 }
 
-@media (max-width: 745px) {
+@media (max-width: 645px) {
   .background__tree {
     background: none;
   }
