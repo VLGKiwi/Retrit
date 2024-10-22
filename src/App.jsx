@@ -38,8 +38,7 @@ function App() {
       duration: 1,
       onComplete: () => animating = false
     })
-
-    console.log(index)
+    
     if (index >= 0) {
       currentIndex = index
     }
@@ -54,7 +53,6 @@ function App() {
       onComplete: () => animating = false
     })
 
-    console.log(index)
     if (index <= 10) {
       currentIndex = index
     }

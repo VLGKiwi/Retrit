@@ -7,3 +7,9 @@
   filter: blur(20px);
 	z-index: 1;
 }
+
+@media (max-width: 645px) {
+  .fog {
+    display: none;
+  }
+}
