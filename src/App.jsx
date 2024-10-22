@@ -38,7 +38,7 @@ function App() {
       duration: 1,
       onComplete: () => animating = false
     })
-    
+
     if (index >= 0) {
       currentIndex = index
     }
@@ -82,6 +82,9 @@ function App() {
         <div className='cloud' id='cloud'><img src={cloud} alt="" /></div>
         <Fog />
         <div className='one'>
+          <Footer />
+        </div>
+        <div className='one'>
           <Intro />
         </div>
         <div className='one'>
@@ -107,9 +110,6 @@ function App() {
         </div>
         <div className='one'>
           <Form />
-        </div>
-        <div className='one'>
-          <Footer />
         </div>
       </div>
     </div>
