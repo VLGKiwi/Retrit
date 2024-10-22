@@ -17,7 +17,8 @@ export const Faq = () => {
           gsap.fromTo(par, {
             x: 0,
 						scaleX: 1,
-						scaleY: 1,
+            scaleY: 1,
+            height: par.offsetHeight
           }, {
 						scaleX: 0,
 						scaleY: 0,
@@ -40,7 +41,7 @@ export const Faq = () => {
 						scaleY: 1,
 						x: 0,
 						height: 'auto',
-            duration: 1.5,
+            duration: 1,
             opacity: 1,
             display: 'flex',
             onComplete: () => animating = false
@@ -48,6 +49,7 @@ export const Faq = () => {
         }
       }
 
+      let heightPar;
       let animating = false
       titles.forEach((title) => {
         title.addEventListener("click", function () {

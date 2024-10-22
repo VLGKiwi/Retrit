@@ -293,6 +293,7 @@
 @media (max-width: 645px) {
 	.about__content {
 		padding: 20px;
+		border-radius: 10px;
 	}
 
 	.about__top {
