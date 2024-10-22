@@ -103,16 +103,16 @@
 
 .background__forest {
   background: fixed no-repeat url(./assets/background.png);
-  background-position: 100% 100%;
+  /* background-position: 100% 100%; */
   z-index: -2;
   overflow: hidden;
 }
 
-.background__tree {
+/* .background__tree {
   background: fixed no-repeat url(./assets/background__tree.png);
   background-position: 100% 100%;
   z-index: -1;
-}
+} */
 
 .cloud {
   position: absolute;
