@@ -82,9 +82,6 @@ function App() {
         <div className='cloud' id='cloud'><img src={cloud} alt="" /></div>
         <Fog />
         <div className='one'>
-          <Footer />
-        </div>
-        <div className='one'>
           <Intro />
         </div>
         <div className='one'>
@@ -110,6 +107,9 @@ function App() {
         </div>
         <div className='one'>
           <Form />
+        </div>
+        <div className='one'>
+          <Footer />
         </div>
       </div>
     </div>
