@@ -11,54 +11,58 @@ export const Faq = () => {
 
   useGSAP(() => {
     const titles = gsap.utils.toArray(`.${style.title}`);
-    function open(par) {
-      if (par.style.display == 'flex') {
-        animating = true;
-        gsap.fromTo(par, {
-          x: 0,
-          scaleX: 1,
-          scaleY: 1,
-          height: par.offsetHeight
-        }, {
-          scaleX: 0,
-          scaleY: 0,
-          x: 900,
-          height: '0',
-          duration: 1,
-          opacity: 0,
-          display: 'none',
-          onComplete: () => animating = false
-        });
-      } else {
-        animating = true;
-        gsap.set(par, {
-          height: 'auto',
-        })
-        gsap.from(par, {
-          height: 0
-        })
-        gsap.fromTo(par, {
-          x: 900,
-          scaleX: 0,
-          scaleY: 0,
-          }, {
-          scaleX: 1,
-          scaleY: 1,
-          x: 0,
-          duration: 1,
-          opacity: 1,
-          display: 'flex',
-          onComplete: () => animating = false
-        });
-      }
+    function close(par) {
+      co = 0
+      animating = true;
+      gsap.fromTo(par, {
+        x: 0,
+        scaleX: 1,
+        scaleY: 1,
+        height: par.offsetHeight
+      }, {
+        scaleX: 0,
+        scaleY: 0,
+        x: 900,
+        height: '0',
+        duration: 1,
+        opacity: 0,
+        // display: 'none',
+        onComplete: () => animating = false
+      });
     }
 
-    let heightPar;
+    function open(par) {
+      co = 1
+      animating = true;
+      gsap.set(par, {
+        height: 'auto',
+      })
+      gsap.from(par, {
+        height: 0
+      })
+      gsap.fromTo(par, {
+        x: 900,
+        scaleX: 0,
+        scaleY: 0,
+        }, {
+        scaleX: 1,
+        scaleY: 1,
+        x: 0,
+        duration: 1,
+        opacity: 1,
+        // display: 'flex',
+        onComplete: () => animating = false
+      });
+    }
+
+    let co = 0;
     let animating = false
     titles.forEach((title) => {
       title.addEventListener("click", function () {
-        if (!animating) {
+        if (!animating && (co === 0)) {
           open(title.nextSibling)
+        } else if (!animating && (co === 1)) {
+          close(title.nextSibling)
         }
       });
     });
