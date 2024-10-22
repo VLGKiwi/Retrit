@@ -92,27 +92,12 @@
   background-color: #7E7E7E;
 }
 
-/* .parallax
-{
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-} */
-
 .background__forest {
   background: fixed no-repeat url(./assets/background.png);
-  /* background-position: 100% 100%; */
+  background-position: 100% 100%;
   z-index: -2;
   overflow: hidden;
 }
-
-/* .background__tree {
-  background: fixed no-repeat url(./assets/background__tree.png);
-  background-position: 100% 100%;
-  z-index: -1;
-} */
 
 .cloud {
   position: absolute;
@@ -127,7 +112,20 @@
 }
 
 @media (max-width: 645px) {
-  .background__tree {
+  .background__forest {
     background: none;
+  }
+
+  .background__forest {
+    background: scroll no-repeat url(./assets/background.png);
+  }
+
+  .background__forest > div:first-child {
+    position: absolute;
+    height: 100vh;
+  }
+
+  .background__forest > div:first-child > img {
+    position: fixed;
   }
 }
